@@ -1,0 +1,223 @@
+/* SHOWCASE */
+
+#showcase {
+  position: relative;
+  background: url('../img/desktop_background(1280x608px).jpg');
+  background-size: cover;
+  min-height: 608px;
+
+  // Large devices (desktops, 992px and up)
+  @media (max-width: 992px) {
+    background: url('../img/desktop_background(1200x608px).jpg');
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    background: url('../img/desktop_background(992x608px).jpg');
+  }
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 576px) {
+    background: url('../img/desktop_background(576x608px).jpg');
+  }
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $site-transparent-overlay;
+}
+
+#showcase .fas,
+#showcase h2,
+#contact .fas {
+  color: $text-color-gold;
+}
+
+#showcase-title {
+  animation: fadeInLeft 2s 0.5s 1 ease both;
+}
+#showcase-title h1 {
+  @media (max-width: 414px) {
+    margin-top: 0px !important;
+  }
+}
+
+#down-arrow {
+  position: absolute;
+  left: 48%;
+  bottom: -0.3em;
+}
+
+#down-arrow .fas {
+  color: $text-color-white;
+}
+
+.pulse:hover,
+.pulsing {
+  animation-name: slideInDown;
+  -webkit-animation-name: slideInDown;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  cursor: pointer;
+}
+
+.top-bar,
+.top-bar-w {
+  width: 60px;
+  height: 3px;
+  background-color: $site-gold;
+  margin: 0 auto;
+}
+
+.top-bar-w {
+  background-color: $site-white;
+}
+
+/* GO UP */
+.up-arrow {
+  display: inline-block;
+  background-color: $site-gold;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.up-arrow::after {
+  content: '\f077';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 40px;
+  color: #fff;
+}
+
+.up-arrow:hover {
+  cursor: pointer;
+  background-color: $site-black;
+}
+
+.up-arrow:active {
+  background-color: $site-grey;
+}
+
+.up-arrow.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* SECTIONS */
+#about {
+  @media (max-width: 575px) {
+    padding: 0px !important;
+  }
+}
+#about .container {
+  @media (min-width: 768px) {
+    margin: 0 auto !important;
+    padding: 0px !important;
+  }
+}
+#about_content {
+  @media (max-width: 992px) {
+    padding-left: 0px !important;
+  }
+  @media (max-width: 768px) {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+}
+#about_info {
+  background-color: $site-gold;
+  @media (max-width: 575px) {
+    background-color: $site-white;
+    padding: 0px 1.5rem !important;
+  }
+}
+#about .top-bar-w {
+  @media (max-width: 575px) {
+    background-color: $site-gold;
+  }
+}
+
+#about_info .top-bar-w,
+#skills .top-bar,
+#project .top-bar {
+  margin-left: 0px;
+}
+
+.about-img {
+  margin-left: 50px;
+  margin-top: 30px;
+  position: absolute;
+  z-index: 999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  @media (min-width: 1200px) {
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+  @media (max-width: 992px) {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 10px;
+    margin-top: 60px;
+  }
+}
+#education {
+  background-color: $site-gold;
+  @media (max-width: 575px) {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+#resume .title {
+  @media (max-width: 575px) {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+#experience,
+#portfolio {
+  background-color: $site-grey-light;
+  @media (max-width: 575px) {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+#portfolio .row {
+  @media (max-width: 575px) {
+    margin-bottom: 0px !important;
+  }
+}
+#portfolio img {
+  @media (max-width: 575px) {
+    margin-bottom: 2rem !important;
+  }
+}
+#skills ul {
+  list-style: none;
+  @media (max-width: 575px) {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+#skills a {
+  margin-left: 40%;
+  @media (max-width: 575px) {
+    margin-left: 30%;
+  }
+}

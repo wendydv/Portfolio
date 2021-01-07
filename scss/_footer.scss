@@ -1,0 +1,42 @@
+/* FOOTER */
+#footer-contact,
+#footer-connect {
+  @media (max-width: 575px) {
+    padding-left: 2rem !important;
+  }
+}
+#footer-connect i:hover {
+  color: $text-color-dark-grey !important;
+}
+#footer-info li {
+  font-size: 14px;
+  padding: 5px;
+}
+#footer-info a:hover {
+  color: $text-color-gold !important;
+  text-decoration: none !important;
+}
+
+#footer-info .fab,
+#footer-info .fas {
+  color: $text-color-gold;
+}
+#footer-info iframe {
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+#main-footer {
+  background: $site-black;
+}
+
+#main-footer p,
+#main-footer button {
+  font-size: 12px !important;
+  color: $text-color-dark-grey;
+}
+#main-footer button:hover {
+  color: $text-color-gold;
+}

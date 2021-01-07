@@ -1,0 +1,23 @@
+#project {
+  @media (max-width: 575px) {
+    padding-top: 1rem !important;
+  }
+}
+
+#project .row {
+  @media (max-width: 575px) {
+    padding: 10px !important;
+  }
+}
+
+#project .card {
+  @media (max-width: 575px) {
+    margin-top: 20px !important;
+  }
+}
+
+#project h1 {
+  @media (max-width: 575px) {
+    font-size: 2rem !important;
+  }
+}

@@ -1,0 +1,20 @@
+/* CONTACT */
+
+#contact {
+  @media (max-width: 575px) {
+    padding: 0px !important;
+  }
+}
+
+#contact .container {
+  @media (max-width: 575px) {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+#contact .card {
+  @media (max-width: 575px) {
+    padding: 0px !important;
+  }
+}
